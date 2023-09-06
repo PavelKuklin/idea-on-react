@@ -1,0 +1,96 @@
+.header {
+  &-wrapper {
+    padding-bottom: 15px;
+  }
+
+  &-block {
+    display: grid;
+    grid-template-areas: "logo search controls";
+    grid-template-columns: max-content 1fr max-content;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 10px;
+    margin: 0 auto;
+    position: relative;
+
+    &__logo {
+      grid-area: logo;
+    }
+
+    &__search {
+      grid-area: search;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__field {
+      max-width: 600px;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      color: $light;
+      cursor: pointer;
+      font-size: 16px;
+      outline: 0;
+      padding: 10px 25px 10px 10px;
+      flex-grow: 1;
+
+      @media (prefers-color-scheme: light) {
+        color: $grey;
+      }
+    }
+
+    &__controls {
+      grid-area: controls;
+    }
+  }
+}
+
+.headerTop {
+  color: $text;
+  background-color: $lite_pink;
+
+  &__block {
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    gap: 10px;
+
+    &_link {
+      color: $text;
+      transition: $transition;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &__text {
+    color: $grey;
+  }
+
+  &__contacts {
+    &_phone {
+      color: $text;
+      transition: $transition;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+
+}
