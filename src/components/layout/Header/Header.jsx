@@ -8,7 +8,7 @@ const Header = () => {
     <div className='header-wrapper'>
       <HeaderTop />
 
-      <div className='container'>
+      <div className='container' >
         <div className='header-block'>
           <div className='header-block__logo'>
             {/* //ссылки делаем через Link чтобы переход был без перезагрузки */}
