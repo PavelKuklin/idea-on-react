@@ -8,7 +8,7 @@ import Header from 'components/layout/Header/Header';
 
 function app() {
   return (
-    <div className='wrapper'>
+    <div className='main-wrapper'>
       <Header />
 
       <div className='content'>

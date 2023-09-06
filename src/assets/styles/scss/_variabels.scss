@@ -1,11 +1,15 @@
 /* COLORS */
-$dark: rgba(40, 44, 52, 1.0);
-$text: rgba(45, 45, 45, 1.0);
-$grey: rgba(150, 150, 150, 1.0);
-$light: rgba(255, 255, 255, 0.87);
-$lite_pink: rgba(225, 232, 255, 1.0);
-$blue: rgba(113, 136, 212, 1.0);
+$primary_dark: #212121;
+$primary_blue: #7188d4;
 
+$dark: $primary_dark;
+$text: lighten($primary_dark, 4.7%);
+$grey: lighten($primary_dark, 46%);
+$light: lighten($primary_dark, 100%);
+$lite_blue: #e1e8ff;
+$blue: $primary_blue;
+
+/* transition */
 $transition: 0.3s ease;
 
 /* SIZES */
