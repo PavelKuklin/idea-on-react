@@ -12,6 +12,7 @@ function app() {
       <Header />
 
       <div className='content'>
+        {/* // связываем адреса и компоненты (грубо говоря) */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/collection/all' element={<Catalog />} />

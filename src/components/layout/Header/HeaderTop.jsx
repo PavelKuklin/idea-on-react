@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeaderTop = () => {
   return (
@@ -7,12 +8,10 @@ const HeaderTop = () => {
         <div className='headerTop__block'>
           <ul className='headerTop__menu'>
             <li className='headerTop__menu_item'>
-              <a
-                className='headerTop__menu_link'
-                href='/collection/all'
-              >
+              {/* //ссылки делаем через Link чтобы переход был без перезагрузки */}
+              <Link to="/collection/all" className='headerTop__menu_link'>
                 Каталог
-              </a>
+              </Link>
             </li>
           </ul>
           <div className='headerTop__text'>
@@ -20,10 +19,7 @@ const HeaderTop = () => {
           </div>
           <div>
             <div>
-              <a
-                className='headerTop__contacts_phone'
-                href='tel:+79891233232'
-              >
+              <a className='headerTop__contacts_phone' href='tel:+79891233232'>
                 +79891233232
               </a>
             </div>
