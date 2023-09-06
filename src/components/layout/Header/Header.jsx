@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
 import HeaderTop from 'components/layout/Header/HeaderTop/HeaderTop';
 import styles from './Header.module.scss';
 
@@ -24,8 +24,12 @@ const Header = () => {
             />
           </div>
           <div className={styles['block__controls']}>
-            <AiOutlineUser className={styles['controls-icon']}/>
-            <AiOutlineHeart className={styles['controls-icon']}/>
+            <Link to='/user-account'>
+              <AiOutlineUser className={styles['controls-icon']} />
+            </Link>
+            <Link to='/favorites'>
+              <AiOutlineHeart className={styles['controls-icon']} />
+            </Link>
           </div>
         </div>
       </div>
