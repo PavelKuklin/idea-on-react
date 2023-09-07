@@ -1,12 +1,12 @@
 /* COLORS */
-$primary_dark: #212121;
-$primary_blue: #7188d4;
+$primary_dark: rgba(33,33,33,1.0);
+$primary_blue: rgba(113,136,212,1.0);
 
 $dark: $primary_dark;
 $text: lighten($primary_dark, 4.7%);
 $grey: lighten($primary_dark, 46%);
 $light: lighten($primary_dark, 100%);
-$lite_blue: #e1e8ff;
+$lite_blue: rgba(225,232,255,1.0);
 $blue: $primary_blue;
 
 /* transition */

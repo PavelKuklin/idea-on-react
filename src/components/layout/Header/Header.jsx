@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
 import HeaderTop from 'components/layout/Header/HeaderTop/HeaderTop';
 import styles from './Header.module.scss';
+import { ReactComponent as Logo } from '../../../assets/images/store_logo.svg';
 
 const Header = () => {
   return (
@@ -14,7 +15,9 @@ const Header = () => {
         <div className={styles.block}>
           <div className={styles['block__logo']}>
             {/* //ссылки делаем через Link чтобы переход был без перезагрузки */}
-            <Link to='/'>logo</Link>
+            <Link to='/' className={styles['block__logo-icon']}>
+              <Logo />
+            </Link>
           </div>
           <div className={styles['block__search']}>
             <input
@@ -24,10 +27,10 @@ const Header = () => {
             />
           </div>
           <div className={styles['block__controls']}>
-            <Link to='/user-account'>
+            <Link to='/user-account' className={styles['block__controls-link']}>
               <AiOutlineUser className={styles['controls-icon']} />
             </Link>
-            <Link to='/favorites'>
+            <Link to='/favorites' className={styles['block__controls-link']}>
               <AiOutlineHeart className={styles['controls-icon']} />
             </Link>
           </div>
