@@ -47,3 +47,98 @@
     }
   }
 }
+
+.toggle {
+  position: relative;
+
+  .theme {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+    vertical-align: middle;
+    background-color: #cccccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    border-radius: 34px;
+    cursor: pointer;
+    z-index: 4;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 28px;
+      width: 28px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      background: white url('../../../../assets/images/sun.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      transition-property: transform;
+      box-shadow: 0 0px 15px #2020203d;
+      border-radius: 34px;
+      z-index: 4;
+    }
+
+
+
+    &[data-theme="dark"] {
+      background-color: $blue;
+
+      &::before {
+        -webkit-transform: translateX(12px);
+        -ms-transform: translateX(12px);
+        transform: translateX(12px);
+        background: $light url('../../../../assets/images/moon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+      }
+    }
+  }
+
+  .auto {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    background-color: $light;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+    box-shadow: 0 0px 15px #2020203d;
+    border-radius: 34px;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+
+    &[data-theme="dark"] {
+      left: 24px;
+    }
+  }
+
+  &:hover {
+
+    .auto {
+      width: 28px;
+      height: 28px;
+      left: 41px;
+      transition-delay: 2s;
+    }
+  }
+}
