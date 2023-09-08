@@ -7,6 +7,7 @@ import Catalog from 'pages/Collection/Collection';
 import Header from 'components/layout/Header/Header';
 import Favorites from 'pages/Favorites/Favorites';
 import UserAccount from 'pages/UserAccount/UserAccount';
+import ToTopButton from 'components/buttonToTop/ToTopButton';
 
 function app() {
   return (
@@ -24,6 +25,7 @@ function app() {
         </Routes>
       </div>
 
+      <ToTopButton />
       <Footer />
     </div>
   );
