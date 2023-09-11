@@ -1,27 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HeaderTop from 'components/layout/Header/HeaderTop';
+import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
+import HeaderTop from 'components/layout/Header/HeaderTop/HeaderTop';
+import styles from './Header.module.scss';
+import { ReactComponent as Logo } from '../../../assets/images/store_logo.svg';
 
 const Header = () => {
   return (
-    <div className='header-wrapper'>
+    <div className={styles.wrapper}>
       <HeaderTop />
 
-      <div className='container' >
-        <div className='header-block'>
-          <div className='header-block__logo'>
+      <div className='container'>
+        <div className={styles.block}>
+          <div className={styles['block__logo']}>
             {/* //ссылки делаем через Link чтобы переход был без перезагрузки */}
-            <Link to='/'>logo</Link>
+            <Link to='/' className={styles['block__logo-icon']}>
+              <Logo />
+            </Link>
           </div>
-          <div className='header-block__search'>
+          <div className={styles['block__search']}>
             <input
-              className='header-block__field'
+              className={styles['block__field']}
               type='text'
               placeholder='Поиск...'
             />
           </div>
-          <div className='header-block__controls'>controls</div>
+          <div className={styles['block__controls']}>
+            <Link to='/user-account' className={styles['block__controls-link']}>
+              <AiOutlineUser className={styles['controls-icon']} />
+            </Link>
+            <Link to='/favorites' className={styles['block__controls-link']}>
+              <AiOutlineHeart className={styles['controls-icon']} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/scss/variabels';
+
+.wrapper {
+  color: $text;
+  background-color: $lite_blue;
+}
+
+.block {
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  gap: 10px;
+
+  &_link {
+    color: $text;
+    transition: $transition;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.text {
+  color: $grey;
+}
+
+.contacts {
+  &_phone {
+    color: $text;
+    transition: $transition;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

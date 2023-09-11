@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bannerImage from '../../../assets/images/718-cayman-1-25.jpg';
+import bannerImage from './daisy_slide_.jpeg';
 import styles from './Banner.module.scss';
 
 const Banner = () => {

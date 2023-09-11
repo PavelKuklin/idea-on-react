@@ -1,5 +1,32 @@
-* {
+:root {
+  color: $dark;
+  background-color: $light;
   font-family: 'Nunito', Roboto, system-ui, Tahoma, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: $light;
+    background-color: $dark;
+    color-scheme: dark;
+  }
+}
+
+.dark {
+  color: $light;
+  background-color: $dark;
+  color-scheme: dark;
+}
+
+.light {
+  color: $dark;
+  background-color: $light;
+  color-scheme: light;
 }
 
 html,
@@ -8,7 +35,7 @@ body,
   height: 100%;
 }
 
-.wrapper {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -44,26 +71,5 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-}
-
-:root {
-  color-scheme: light dark;
-  color: $light;
-  background-color: $dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: $dark;
-    background-color: $light;
-  }
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
