@@ -1,0 +1,12 @@
+.catalog {
+  display: flex;
+  align-content: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+
+  &-block {
+    padding: 1rem 0 3rem;
+  }
+}
