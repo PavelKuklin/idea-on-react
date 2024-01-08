@@ -7,6 +7,7 @@ import Catalog from 'pages/Collection/Collection';
 import Header from 'components/layout/Header/Header';
 import Favorites from 'pages/Favorites/Favorites';
 import UserAccount from 'pages/UserAccount/UserAccount';
+import ClampFunction from 'pages/ClampFunction/ClampFunction';
 import ToTopButton from 'components/buttonToTop/ToTopButton';
 
 function app() {
@@ -21,6 +22,7 @@ function app() {
           <Route path='/user-account' element={<UserAccount />} />
           <Route path='/favorites' element={<Favorites />} />
           <Route path='/collection/all' element={<Catalog />} />
+          <Route path='/clamp-function' element={<ClampFunction />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>

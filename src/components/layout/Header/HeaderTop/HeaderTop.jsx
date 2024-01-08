@@ -5,6 +5,10 @@ import styles from './HeaderTop.module.scss';
 import ThemeSwitcher from 'components/themeSwitcher/ThemeSwitcher';
 
 const HeaderTop = () => {
+  // const [now, setNow] = React.useState(new Date());
+
+  // setInterval(() => setNow(new Date()), 1000);
+
   return (
     <div className={styles.wrapper}>
       <div className='container'>
@@ -16,7 +20,13 @@ const HeaderTop = () => {
                 Каталог
               </Link>
             </li>
+            <li>
+              <Link to='/clamp-function' className={styles['menu_link']}>
+                Clamp-function
+              </Link>
+            </li>
           </ul>
+          {/* <div className=''>{now.toLocaleTimeString()}</div> */}
           <div className={styles.text}>
             <div>Доставка с 8:00 до 23:00</div>
           </div>
