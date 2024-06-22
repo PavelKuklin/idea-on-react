@@ -1,14 +1,15 @@
 import React from 'react';
+import IndexAdvantageItem from './IndexAdvantageItem';
+import { INDEX_ADVANTAGES } from './advantageData.js';
+import './IndexAdvantages.css';
 
 const IndexAdvantages = () => {
+  console.log(INDEX_ADVANTAGES)
   return (
     <div className='advantages'>
       <div className="container">
         <div className="advantages__list">
-            <div className="advantages__item">1</div>
-            <div className="advantages__item">2</div>
-            <div className="advantages__item">3</div>
-            <div className="advantages__item">4</div>
+            {INDEX_ADVANTAGES.map(advategItem => <IndexAdvantageItem key={advategItem.title} {...advategItem} />)}
         </div>
       </div>
     </div>
