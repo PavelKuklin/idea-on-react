@@ -9,6 +9,7 @@ import Favorites from 'pages/Favorites/Favorites';
 import UserAccount from 'pages/UserAccount/UserAccount';
 import ClampFunction from 'pages/ClampFunction/ClampFunction';
 import ToTopButton from 'components/buttonToTop/ToTopButton';
+import IndexAdvantages from 'components/layout/IndexAdvantages/IndexAdvantages';
 
 function app() {
   return (
@@ -26,7 +27,7 @@ function app() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
-
+      <IndexAdvantages />
       <ToTopButton />
       <Footer />
     </div>
