@@ -1,5 +1,7 @@
 import axios from "axios"
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const config = {
   onDownloadProgress: function (progressEvent) {
     console.log('progressEvent: ', progressEvent);
@@ -9,7 +11,7 @@ export const ProductService = {
   async getAll () {
     try {
       const response = await axios.get(
-        "https://6453d5b9e9ac46cedf310ba2.mockapi.io/cars",
+        API_URL,
         config
       );
 
@@ -24,7 +26,7 @@ export const ProductService = {
   async getById (id) {
     try {
       const response = await axios.get(
-        `https://6453d5b9e9ac46cedf310ba2.mockapi.io/cars/${id}`
+        `${API_URL}/${id}`
       );
 
       return response.data;
@@ -37,12 +39,12 @@ export const ProductService = {
   async create (data) {
     try {
       const response = await axios.post(
-        "https://6453d5b9e9ac46cedf310ba2.mockapi.io/cars/",
+        API_URL,
         data
       );
       return response.data;
     } catch (error) {
-      throw new Error("Failed to create car");
+      throw new Error("Failed to create car", error);
     }
   }
 

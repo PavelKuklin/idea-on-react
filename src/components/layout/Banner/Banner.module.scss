@@ -1,5 +1,5 @@
-@import '../../../assets/styles/scss/_variabels.scss';
+// @import '../../../assets/styles/scss/_variabels.scss';
 
 .bannerBlock {
-  background-color: $grey;
+  background-color: var(--grey);
 }

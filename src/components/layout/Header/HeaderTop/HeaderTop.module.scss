@@ -1,8 +1,6 @@
-@import '../../../../assets/styles/scss/variabels';
-
 .wrapper {
-  color: $text;
-  background-color: $lite_blue;
+  color: var(--text);
+  background-color: var(--back_blue);
 }
 
 .block {
@@ -24,26 +22,26 @@
   gap: 10px;
 
   &_link {
-    color: $text;
-    transition: $transition;
+    color: var(--text);
+    transition: var(--transition);
 
     &:hover {
-      color: $blue;
+      color: var(--blue);
     }
   }
 }
 
 .text {
-  color: $grey;
+  color: var(--text);
 }
 
 .contacts {
   &_phone {
-    color: $text;
-    transition: $transition;
+    color: var(--text);
+    transition: var(--transition);
 
     &:hover {
-      color: $blue;
+      color: var(--blue);
     }
   }
 }

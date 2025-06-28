@@ -1,8 +1,7 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './HeaderTop.module.scss';
-import ThemeSwitcher from 'components/themeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from '@components/themeSwitcher/ThemeSwitcher';
 
 const HeaderTop = () => {
   // const [now, setNow] = React.useState(new Date());

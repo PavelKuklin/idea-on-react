@@ -1,12 +1,12 @@
-@import './variabels';
-@import './libs/reset';
-@import './libs/normalize';
+@use './libs/reset';
+@use './variabels';
+@use './libs/normalize';
 
-@import './layouts/footer.scss';
-@import './layouts/banner.scss';
+@use './layouts/footer.scss';
+@use './layouts/banner.scss';
 
 .container {
-  max-width: $max_width;
+  max-width: var(--max_width);
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;

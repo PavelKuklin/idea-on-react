@@ -1,4 +1,4 @@
-@import '../../../assets/styles/scss/variabels';
+// @use '../../../assets/styles/scss/variabels';
 
 .wrapper {
   box-shadow: 0 3px 3px 0px #f1f1f1;
@@ -19,8 +19,8 @@
     grid-area: logo;
 
     &-icon {
-      fill: $blue;
-      transition: $transition;
+      fill: var(--blue);
+      transition: var(--transition);
 
       &:hover {
         opacity: 0.8;
@@ -41,7 +41,7 @@
 
   &__field {
     max-width: 600px;
-    border: 1px solid $grey;
+    border: 1px solid var(--grey);
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -84,9 +84,9 @@
   height: 100%;
   width: 20px;
   cursor: pointer;
-  transition: $transition;
+  transition: var(--transition);
 
   &:hover {
-    color: $blue;
+    color: var(--blue);
   }
 }

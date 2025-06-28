@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProductService } from 'services/product.service';
+import { ProductService } from '@services/product.service';
 import ProductsPreloader from '../../components/Sceleton/Sceleton';
 import ProductItem from '../../components/ProductItem/ProductItem';
 import styles from './Collection.module.scss';

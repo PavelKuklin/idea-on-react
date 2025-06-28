@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
-import HeaderTop from 'components/layout/Header/HeaderTop/HeaderTop';
+import HeaderTop from '@components/layout/Header/HeaderTop/HeaderTop';
 import styles from './Header.module.scss';
-import { ReactComponent as Logo } from '../../../assets/images/store_logo.svg';
+// import { ReactComponent as Logo } from '@assets/images/store_logo.svg';
+import Logo from "@assets/images/store_logo.svg?react";
 
 const Header = () => {
   return (

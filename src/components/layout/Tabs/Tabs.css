@@ -17,10 +17,11 @@
     border: none;
     border-radius: 6px;
     background-color: #cacaca;
-    color: #fff;
+    color: var(--dark);
     cursor: pointer;
 }
 .tabs__buttons button.active {
+    color: var(--light,#fff);
     background-color: rgb(113, 136, 212);
 }
 
