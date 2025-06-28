@@ -1,0 +1,71 @@
+:root {
+  /* COLORS */
+  --primary_dark: rgba(33, 33, 33, 1);
+  --primary_light: rgba(255, 255, 255, 1);
+  --primary_blue: rgba(113, 136, 212, 1);
+
+  --dark: var(--primary_dark);
+  --light: var(--primary_light);
+  --text: var(--primary_light);
+  --background: var(--primary_dark);
+  --back_blue: rgba(225, 232, 255, 1);
+  --grey: rgb(93, 90, 90);;
+  --blue: var(--primary_blue);
+
+  /* transition */
+  --transition: 0.3s ease;
+
+  /* SIZES */
+  --max_width: 1440px;
+
+  color-scheme: light dark;
+  color: var(--dark);
+  background-color: var(--light);
+  font-family: 'Nunito',
+    Roboto,
+    system-ui,
+    Tahoma,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --back_blue: rgba(40,46,63,1.0);
+    --background: var(--primary_dark);
+    --text: var(--primary_light);
+    color: var(--light);
+    background-color: var(--dark);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.dark {
+  --back_blue: rgba(40,46,63,1.0);
+  --background: var(--primary_dark);
+  --text: var(--primary_light);
+  color: var(--light);
+  background-color: var(--dark);
+  color-scheme: dark;
+}
+
+.light {
+  --theme: light;
+  --back_blue: rgba(225, 232, 255, 1);
+  --background: var(--primary_light);
+  --text: var(--primary_dark);
+  color: var(--dark);
+  background-color: var(--light);
+  color-scheme: light;
+}
